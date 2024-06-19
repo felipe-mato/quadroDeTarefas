@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+main {
+  padding: 30px;
+  user-select: none;
+  height: calc(100vh - 60px); 
+}
+
+header > span {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #6b778c;
+  letter-spacing: 0.02rem;
+}
+
+header > h1 {
+  color: #182b4d;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.columns {
+  display: flex;
+  gap: 15px;
+  height: 100%; 
+}
+
+.column {
+  position: relative;
+  width: 100%;
+  background-color: #f4f5f7;
+  border-radius: 8px;
+  height: 100%; 
+  margin-bottom: 50px;
+  display: block;
+  flex-direction: column; 
+}
+
+.column__title {
+  color: #4d5c76;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.column__cards {
+  padding: 4px;
+  height: calc(100% - 100px); 
+  border-radius: 5px;
+  border: 2px solid transparent;
+  display: block;
+  flex-direction: column;
+}
+
+.card {
+  padding: 12px 14px;
+  width: 100%;
+  min-height: 70px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #dfe1e6;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 2px #dfe1e6;
+  font-weight: 500;
+  color: #4d5c76;
+  margin-bottom: 5px;
+}
+
+.column__highlight {
+  border: 2px solid #2482ff;
+  background-color: #a8bdff;
+  height: calc(100% - 60px); 
+  border-radius: 5px;
+  transition: border 0.3s ease, background-color 0.3s ease;
+  display: block;
+  flex-direction: column;
+}
+
+.card:hover {
+  background-color: #f9f9f9; 
+}
+
+textarea {
+  position: relative;
+}
+
+textarea {
+  width: calc(100% - 4px); 
+  min-height: 70px; 
+  padding: 8px 12px; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 0.9rem; 
+  resize: none; 
+  
+  transition: box-shadow 0.3s ease; 
+}
+
+textarea:focus {
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(37, 143, 255, 0.2); 
+}
+
+textarea::placeholder {
+  color: #bbb; 
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent; 
+  color: #333; 
+  background-color: #f0f0f0; 
+  border-radius: 5px; 
+  transition: all 0.3s ease; 
+}
+
+button:hover {
+  cursor: pointer;
+  border-color: #3498db; 
+  color: #3498db; 
+  background-color: #e0e0e0; 
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
